@@ -2,12 +2,12 @@
     "version": 2,
     "builds": [
       {
-        "src": "app/nuxt.config.js",
+        "src": "./app/nuxt.config.ts",
         "use": "@nuxtjs/vercel-builder",
         "config": {
           "layers": {
             "base": {
-              "src": "base/nuxt.config.js",
+              "src": "./base/nuxt.config.ts",
               "buildDir": "base/dist"
             }
           }
