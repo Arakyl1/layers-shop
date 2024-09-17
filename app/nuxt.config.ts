@@ -2,5 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   extends: ['../base'],
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+   buildDir: 'app/dist'
 })
