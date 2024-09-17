@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app/nuxt.config.js",
+        "use": "@nuxtjs/vercel-builder",
+        "config": {
+          "layers": {
+            "base": {
+              "src": "base/nuxt.config.js",
+              "buildDir": "base/dist"
+            }
+          }
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/app/dist/\$1"
+      }
+    ]
+  }
